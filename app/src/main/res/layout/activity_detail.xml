@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".DetailActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tv_profil_detail"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="@dimen/_100dp"
+        android:src="@drawable/logo_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_20dp"/>
+    <TextView
+        android:id="@+id/tv_name_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel Wisata"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_profil_detail"
+        app:layout_constraintStart_toStartOf="@+id/tv_profil_detail"
+        app:layout_constraintTop_toBottomOf="@id/tv_profil_detail"/>
+
+
+    <TextView
+        android:id="@+id/tv_email_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sp"
+        android:layout_marginTop="@dimen/_10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name_profil"
+        app:layout_constraintStart_toStartOf="@id/tv_name_profil"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_profil"/>
+
+    <TextView
+        android:id="@+id/tv_facebook_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with Facebook"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sp"
+        android:layout_marginTop="@dimen/_10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_email_detail"
+        app:layout_constraintStart_toStartOf="@id/tv_email_detail"
+        app:layout_constraintTop_toBottomOf="@id/tv_email_detail"/>
+
+    <TextView
+        android:id="@+id/tv_google_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with Google"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sp"
+        android:layout_marginTop="@dimen/_10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_facebook_detail"
+        app:layout_constraintStart_toStartOf="@id/tv_facebook_detail"
+        app:layout_constraintTop_toBottomOf="@id/tv_facebook_detail"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/tv_google_detail"
+        app:layout_constraintStart_toStartOf="@+id/tv_google_detail"
+        app:layout_constraintTop_toBottomOf="@id/tv_google_detail"
+        android:layout_marginTop="@dimen/_10dp"
+        android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15dp"
+            android:gravity="center"
+            android:text="Nama Wisata"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15dp"
+            android:text="FramHouse"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15dp"
+                android:gravity="center"
+                android:text="Harga Tiket"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15dp"
+                android:text="Rp.160.000"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tujuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15dp"
+                android:gravity="center"
+                android:text="Tujuan"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15dp"
+                android:text="Bandung"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
